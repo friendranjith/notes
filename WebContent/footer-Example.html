@@ -1,0 +1,33 @@
+<!--	footer is fixed to bottom when no content in main-content area,
+	If content is there in main-content footer will affix at bottom of the main-content div.	-->
+
+<html>
+	<head>
+		<style>
+			html {
+				height:100%;
+			}
+			body {
+				min-height: 100%;
+				position: relative;
+			}
+			.header {
+				height: 80px;
+			}
+			.content {
+				padding-top: 80px; /* header height */
+				padding-bottom: 50px; /* footer height */
+			}
+			.footer {
+				height: 50px;
+				position: absolute;
+				bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header"></div>
+		<div class="content"></div>
+		<div class="footer"></div>
+	</body>
+</html>
